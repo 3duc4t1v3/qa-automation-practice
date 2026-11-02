@@ -23,3 +23,6 @@ test('rechaza la cantidad 11', async () => {
   expect(validarCantidad(11)).toBe(false);
 });
 
+test('rechaza cantidades negativas', async () => {
+  expect(validarCantidad(-1)).toBe(false);
+});
